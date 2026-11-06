@@ -59,18 +59,20 @@ MootMood is a professional legal research platform designed specifically for int
 ## Technology Stack
 
 ### Frontend
-- **Framework:** Next.js 14+ (App Router)
+- **Framework:** Next.js (App Router) — Use latest stable version
 - **Language:** TypeScript (strict mode)
 - **Styling:** Tailwind CSS
 - **UI Components:** shadcn/ui (Radix UI + Tailwind)
 - **Icons:** Lucide React
 
 ### Backend
-- **Runtime:** Node.js 20+ LTS
+- **Runtime:** Node.js LTS — Use latest stable LTS version
 - **API:** Next.js Server Actions & Route Handlers
 - **Database:** PostgreSQL 15+
 - **ORM:** Prisma
 - **Search:** PostgreSQL Full-Text Search (MVP), Meilisearch (future)
+
+**Note:** Version numbers like "Next.js 14+" or "Node.js 20+" referenced elsewhere were current at planning time (November 2026). Always use latest stable, supported versions at implementation time.
 
 ### Deployment
 - **Hosting:** Vercel
