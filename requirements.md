@@ -836,9 +836,8 @@ Under each issue:
 ---
 
 ### Phase 10: Extended Dataset (Ongoing)
-### Phase 10: Extended Dataset (Ongoing)
 - Expand from 5 to 15-20+ verified ICJ cases
-- Add 50+ more cases beyond initial 20
+- Add 50+ more cases beyond initial 20 (reaching 50+ total)
 - Include ICTY/ICTR cases
 - Add ICC cases
 - Include PCA awards
@@ -863,7 +862,7 @@ Under each issue:
 - Citation validation
 - Memorial export templates
 
-### Phase 7: AI Features (8 weeks)
+### Phase 14: AI Features (8 weeks) — POST-MVP
 - Legal concept extraction
 - Case similarity
 - Authority recommendations
