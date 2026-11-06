@@ -16,7 +16,8 @@ I have successfully completed the comprehensive planning and architecture phase 
 - Complete feature specifications for MVP
 - User personas and user flows
 - Legal topic taxonomy (6 major categories, 80+ sub-topics)
-- Initial dataset requirements (15-20 ICJ cases)
+- Two-milestone MVP strategy (1-case prototype → 5-case MVP)
+- Initial dataset requirements (5 ICJ cases for MVP, expand to 15-20+ in Phase 10)
 - Success criteria and metrics
 - Non-functional requirements
 - Risk analysis
