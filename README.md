@@ -95,18 +95,20 @@ International law mooters struggle to:
 ## 🛠 Technology Stack
 
 ### Frontend
-- **Framework:** Next.js 14+ (App Router)
+- **Framework:** Next.js (App Router) — Use latest stable version
 - **Language:** TypeScript (strict mode)
 - **Styling:** Tailwind CSS
 - **UI Components:** shadcn/ui (Radix UI + Tailwind)
 - **Icons:** Lucide React
 
 ### Backend
-- **Runtime:** Node.js 20+ LTS
+- **Runtime:** Node.js LTS — Use latest stable LTS version
 - **API:** Next.js Server Actions & Route Handlers
 - **Database:** PostgreSQL 15+
 - **ORM:** Prisma
 - **Search:** PostgreSQL Full-Text Search (MVP), Meilisearch (planned)
+
+**Note:** Version numbers like "Next.js 14+" or "Node.js 20+" referenced throughout documentation were current at planning time (November 2026). Always use latest stable, supported versions at implementation time.
 
 ### Deployment
 - **Hosting:** Vercel
@@ -140,10 +142,12 @@ This repository contains comprehensive planning and technical documentation:
 
 ### Prerequisites
 
-- Node.js 20+ LTS
+- Node.js LTS (latest stable version)
 - PostgreSQL 15+ (or Supabase account)
 - Git
 - A code editor (VS Code recommended)
+
+**Note:** Specific version requirements (e.g., "Node.js 20+") will be determined at implementation time based on dependency compatibility.
 
 ### Installation (Coming Soon)
 
