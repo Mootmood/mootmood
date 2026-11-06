@@ -332,7 +332,7 @@ After MVP proves the system works, expand to 15-20+ cases:
 
 ### Risk 5: Source Verification Burden
 **Risk:** Manually verifying authorities is time-consuming  
-**Mitigation:** Start with 10-20 cases only, prioritize quality over quantity
+**Mitigation:** Two-milestone approach — 1 case prototype (10 paragraphs), expand to 5 cases (100-150 paragraphs) for MVP, prioritize quality over quantity
 
 ---
 
