@@ -408,7 +408,13 @@ All planning documentation is now available on GitHub:
 - Basic component library
 - Development environment
 
-🎯 **Milestone 1: 1-Case Prototype** (Target: 1 week)
+**Milestone 1: 1-Case Prototype** (Target: End of Phase 5, Week 12)
+- Nicaragua v United States (1986)
+- 10 manually verified paragraphs
+- Full search, browse, citation features
+- Foundation for 5-case MVP
+
+🎯 **Milestone 2: 5-Case MVP** (Target: End of Phase 8, Week 16)
 - Nicaragua v United States (1986)
 - 10 manually verified paragraphs
 - Full search, browse, citation features
