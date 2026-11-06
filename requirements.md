@@ -186,15 +186,21 @@ Hierarchical browsable taxonomy with initial categories:
 - Relevant treaty
 - Source category (primary/secondary)
 
-**Supported Courts/Tribunals (MVP):**
-- International Court of Justice (ICJ)
-- International Criminal Court (ICC)
-- International Tribunal for the Law of the Sea (ITLOS)
-- International Criminal Tribunal for the former Yugoslavia (ICTY)
-- International Criminal Tribunal for Rwanda (ICTR)
-- Permanent Court of Arbitration (PCA)
-- European Court of Human Rights (ECtHR)
-- Inter-American Court of Human Rights (IACtHR)
+**Supported Courts/Tribunals:**
+
+**MVP (Populated Dataset):**
+- International Court of Justice (ICJ) — 5 verified cases with full data
+
+**Future Integration (Technical Architecture Supports, Data TBD):**
+- International Criminal Court (ICC) — Phase 10+
+- International Tribunal for the Law of the Sea (ITLOS) — Phase 10+
+- International Criminal Tribunal for the former Yugoslavia (ICTY) — Phase 10+
+- International Criminal Tribunal for Rwanda (ICTR) — Phase 10+
+- Permanent Court of Arbitration (PCA) — Phase 10+
+- European Court of Human Rights (ECtHR) — Phase 10+
+- Inter-American Court of Human Rights (IACtHR) — Phase 10+
+
+**Note:** MVP search architecture is extensible to support multiple international courts and tribunals. Only ICJ has populated data in MVP. Other courts will be added in post-MVP phases as dataset expands.
 
 #### 1.4 Search Results Display
 
