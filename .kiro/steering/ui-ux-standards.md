@@ -190,10 +190,12 @@ Use Tailwind's spacing scale consistently:
 - Sticky header with document name
 - Paragraph numbers in left gutter
 - Selectable text
-- Action toolbar on selection:
-  - Copy
-  - Save
-  - Cite
+- Action toolbar on selection (MVP):
+  - Copy paragraph
+  - Copy citation
+  - Copy both
+
+**Note:** Save functionality deferred to Phase 9 (Research Workspace)
 
 ### Citation Display
 - Style selector dropdown
