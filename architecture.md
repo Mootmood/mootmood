@@ -8,7 +8,9 @@
 
 ## Architecture Overview
 
-MootMood is built as a modern, server-rendered web application using Next.js 14+ with the App Router, PostgreSQL for data persistence, and TypeScript for type safety. The architecture prioritizes simplicity, maintainability, and legal data accuracy.
+MootMood is built as a modern, server-rendered web application using Next.js with the App Router, PostgreSQL for data persistence, and TypeScript for type safety. The architecture prioritizes simplicity, maintainability, and legal data accuracy.
+
+**Technology Version Note:** Use the latest stable, supported versions of all technologies at implementation time. Verify compatibility between framework, runtime, and dependency versions before beginning development.
 
 ### Architecture Principles
 
@@ -25,12 +27,14 @@ MootMood is built as a modern, server-rendered web application using Next.js 14+
 
 ### Frontend Layer
 
-**Framework:** Next.js 14+ (App Router)
+**Framework:** Next.js (App Router) — Use latest stable version compatible with dependencies
 - Server Components by default
 - Client Components only when interactivity required
 - Server Actions for mutations
 - Route handlers for API endpoints
 - Static generation for public pages
+
+**Note:** Use the latest stable, supported Next.js version at implementation time. Verify compatibility with dependencies before initializing.
 
 **Language:** TypeScript 5+
 - Strict mode enabled
@@ -56,10 +60,12 @@ MootMood is built as a modern, server-rendered web application using Next.js 14+
 
 ### Backend Layer
 
-**Runtime:** Node.js 20+ LTS
+**Runtime:** Node.js LTS — Use latest stable LTS version compatible with dependencies
 - Native ES modules
 - Modern JavaScript features
 - Stable and performant
+
+**Note:** Use the latest stable Node.js LTS version at implementation time. Verify compatibility with Next.js and other dependencies.
 
 **API Layer:** Next.js App Router
 - Server Actions for mutations

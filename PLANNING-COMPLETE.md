@@ -16,7 +16,8 @@ I have successfully completed the comprehensive planning and architecture phase 
 - Complete feature specifications for MVP
 - User personas and user flows
 - Legal topic taxonomy (6 major categories, 80+ sub-topics)
-- Initial dataset requirements (15-20 ICJ cases)
+- Two-milestone MVP strategy (1-case prototype → 5-case MVP)
+- Initial dataset requirements (5 ICJ cases for MVP, expand to 15-20+ in Phase 10)
 - Success criteria and metrics
 - Non-functional requirements
 - Risk analysis
@@ -52,7 +53,7 @@ I have successfully completed the comprehensive planning and architecture phase 
 - Sample data structures
 
 #### 4. **Development Roadmap** (`development-roadmap.md`)
-- Complete 17-week MVP timeline broken into 8 phases
+- Complete MVP timeline (14-16 weeks indicative) broken into 8 phases
 - Detailed task lists for each phase
 - Review checkpoints between phases
 - Post-MVP phases (9-14) with timelines
@@ -95,24 +96,32 @@ I have successfully completed the comprehensive planning and architecture phase 
 1. **Advanced Legal Search** — Keyword + topic + filters
 2. **Legal Authority Reader** — Document viewer with paragraph navigation
 3. **Citation Generator** — OSCOLA + Bluebook automated citations
-4. **International Law Sources** — 15-20 verified ICJ cases
-5. **Topic-Based Discovery** — Hierarchical legal taxonomy
+4. **Topic-Based Discovery** — Hierarchical legal taxonomy
+
+**Note:** Research Workspace (save functionality, user accounts) deferred to Phase 9 (POST-MVP)
 
 ### Technology Stack
-- **Frontend:** Next.js 14 + TypeScript + Tailwind CSS + shadcn/ui
+- **Frontend:** Next.js (App Router) + TypeScript + Tailwind CSS + shadcn/ui
 - **Backend:** Next.js Server Actions + PostgreSQL + Prisma
 - **Deployment:** Vercel + Supabase
 - **Search:** PostgreSQL Full-Text Search (MVP)
 
+**Note:** Use latest stable versions of all technologies at implementation time.
+
 ### Timeline
-- **MVP Development:** 17 weeks (4 months)
+- **MVP Development:** 14-16 weeks (indicative, based on 5-case scope)
 - **Phase 0 (Planning):** ✅ Complete
-- **Phases 1-7:** Development
-- **Phase 8:** Launch
+- **Phases 1-8:** Development
+- **Two Milestones:** 1-case prototype (Phase 5) → 5-case MVP (Phase 8)
 
 ### Initial Dataset
-- 15-20 landmark ICJ cases
-- 300+ extracted paragraphs
+**Milestone 1: 1-Case Prototype**
+- Nicaragua v United States (1986)
+- 10 manually verified paragraphs
+
+**Milestone 2: 5-Case MVP**
+- 5 verified landmark ICJ cases
+- 100-150 extracted paragraphs (20-30 per case)
 - Complete verified metadata
 - Official source links
 - Legal topic tagging
@@ -176,7 +185,7 @@ I have successfully completed the comprehensive planning and architecture phase 
 
 ### 6. **Phased Development**
 - MVP focuses on core search + citation features
-- User accounts deferred to Phase 2 (workspace)
+- User accounts deferred to Phase 9 (Research Workspace - POST-MVP)
 - Advanced AI features deferred to Phase 14
 - Each phase builds on stable foundation
 
@@ -281,8 +290,8 @@ I have successfully completed the comprehensive planning and architecture phase 
 ✅ No critical bugs in core workflows  
 
 **Content:**
-✅ 15-20 verified ICJ cases  
-✅ 300+ extracted paragraphs  
+✅ 5 verified ICJ cases (MVP)  
+✅ 100-150 extracted paragraphs  
 ✅ Complete legal topic taxonomy  
 
 ---
@@ -302,7 +311,7 @@ I have successfully completed the comprehensive planning and architecture phase 
 **Questions to Consider:**
 - Are the MVP features correct?
 - Is the technology stack appropriate?
-- Is the 17-week timeline acceptable?
+- Is the 14-16 week timeline acceptable (indicative only)?
 - Are there any missing requirements?
 - Do you approve the design direction?
 
@@ -418,7 +427,7 @@ I have created this comprehensive planning documentation to ensure:
 2. **Technical foundation** — Architecture is sound and scalable
 3. **Legal accuracy** — Source integrity rules are clear
 4. **Professional design** — UI/UX standards are defined
-5. **Realistic timeline** — 17 weeks with clear milestones
+5. **Realistic timeline** — 14-16 weeks (indicative) with clear milestones
 6. **Risk mitigation** — Identified risks and solutions
 
 ### About the Technology Choices
@@ -458,9 +467,10 @@ I have created this comprehensive planning documentation to ensure:
 - Clear progress milestones
 - Can adjust based on feedback
 
-**Why start with 10-20 cases?**
-- Quality over quantity
-- Verify entire workflow works
+**Two-Milestone Approach:**
+- **Milestone 1:** 1 case (Nicaragua v US), 10 paragraphs — Proves core concept
+- **MVP (Milestone 2):** 5 cases, 100-150 paragraphs — Functional research platform
+- **Phase 10:** Expand to 15-20+ cases with more legal topics
 - Test citation accuracy
 - Ensure UI/UX is right
 - Easier to expand than to fix bad data
@@ -526,7 +536,7 @@ Before we proceed, please consider:
 
 2. **Is the technology stack (Next.js + PostgreSQL + Prisma) acceptable?**
 
-3. **Is the 17-week MVP timeline reasonable for your goals?**
+3. **Is the 14-16 week indicative MVP timeline reasonable for your goals?**
 
 4. **Do you have any concerns about the legal accuracy requirements?**
 

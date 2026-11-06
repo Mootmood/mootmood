@@ -52,14 +52,16 @@ MootMood is a professional international law legal research platform designed sp
 
 ### User Needs Analysis
 
-**Moot Court Participant Workflow:**
+**Moot Court Participant Workflow (MVP):**
 1. Identify legal issue from competition problem
-2. Search for relevant authorities
-3. Read judgments to find supporting paragraphs
-4. Extract quotations with pinpoint citations
-5. Organize authorities by memorial issue
-6. Generate properly formatted citations
-7. Draft memorial with cited authorities
+2. Search for relevant authorities by topic or keyword
+3. Discover and open relevant judgments
+4. Read judgments to find supporting paragraphs
+5. Copy relevant paragraphs with one click
+6. Generate properly formatted citations (OSCOLA or Bluebook)
+7. Paste into memorial document
+
+**Note:** Persistent research organization (saving authorities by issue) is a Phase 9 feature, not included in MVP.
 
 **Pain Points Addressed:**
 - ❌ Current: Search case databases by name only
@@ -71,8 +73,8 @@ MootMood is a professional international law legal research platform designed sp
 - ❌ Current: Manually format citations from templates
 - ✅ MootMood: Auto-generate citations from metadata
 
-- ❌ Current: Scattered notes and bookmarks
-- ✅ MootMood: Organized research workspace
+- ❌ Current: Copying and pasting from PDFs is error-prone
+- ✅ MootMood: One-click copy with perfect formatting
 
 ---
 
@@ -184,15 +186,21 @@ Hierarchical browsable taxonomy with initial categories:
 - Relevant treaty
 - Source category (primary/secondary)
 
-**Supported Courts/Tribunals (MVP):**
-- International Court of Justice (ICJ)
-- International Criminal Court (ICC)
-- International Tribunal for the Law of the Sea (ITLOS)
-- International Criminal Tribunal for the former Yugoslavia (ICTY)
-- International Criminal Tribunal for Rwanda (ICTR)
-- Permanent Court of Arbitration (PCA)
-- European Court of Human Rights (ECtHR)
-- Inter-American Court of Human Rights (IACtHR)
+**Supported Courts/Tribunals:**
+
+**MVP (Populated Dataset):**
+- International Court of Justice (ICJ) — 5 verified cases with full data
+
+**Future Integration (Technical Architecture Supports, Data TBD):**
+- International Criminal Court (ICC) — Phase 10+
+- International Tribunal for the Law of the Sea (ITLOS) — Phase 10+
+- International Criminal Tribunal for the former Yugoslavia (ICTY) — Phase 10+
+- International Criminal Tribunal for Rwanda (ICTR) — Phase 10+
+- Permanent Court of Arbitration (PCA) — Phase 10+
+- European Court of Human Rights (ECtHR) — Phase 10+
+- Inter-American Court of Human Rights (IACtHR) — Phase 10+
+
+**Note:** MVP search architecture is extensible to support multiple international courts and tribunals. Only ICJ has populated data in MVP. Other courts will be added in post-MVP phases as dataset expands.
 
 #### 1.4 Search Results Display
 
@@ -259,7 +267,8 @@ For each paragraph, provide:
 1. **Copy Paragraph** — Copy paragraph text only
 2. **Copy Citation** — Copy formatted citation with paragraph reference
 3. **Copy Paragraph + Citation** — Both together, formatted for Word
-4. **Save Paragraph** — Save to research workspace (future phase)
+
+**Note:** Save functionality deferred to Phase 9 (Research Workspace - POST-MVP)
 
 **Output Format Example:**
 ```
@@ -273,7 +282,7 @@ Citation: Military and Paramilitary Activities in and against Nicaragua (Nicarag
 **Citation Style Selector:**
 - OSCOLA (default for UK/international competitions)
 - Bluebook (for US-focused competitions)
-- Custom Competition Style (future)
+- Note: Custom competition citation styles deferred to Phase 13
 
 **Generated Citation Elements:**
 - Full citation
@@ -424,61 +433,15 @@ Competition-specific profiles:
 
 ---
 
-### Feature 5: Research Workspace
+## Core Features — MVP Scope (Summary)
 
-**Priority:** MEDIUM (Phase 3)
+**MVP includes ONLY the following 4 features:**
+1. Advanced Legal Search Engine
+2. Legal Authority Reader  
+3. Citation Generator
+4. Topic-Based Discovery
 
-#### 5.1 Project Organization
-
-Users can create research projects:
-- Project name (e.g., "Jessup 2027 — Applicant Memorial")
-- Project description
-- Creation date
-- Related competition/course
-
-#### 5.2 Issue-Based Organization
-
-Within each project:
-- Issue I: [Legal Issue Name]
-- Issue II: [Legal Issue Name]
-- Issue III: [Legal Issue Name]
-
-Under each issue:
-- Saved cases
-- Saved paragraphs
-- Treaties and provisions
-- Research notes
-- Legal arguments
-
-#### 5.3 Saved Content
-
-**Saved Case:**
-- Full case metadata
-- Link to document
-- Custom tags
-- Personal notes
-- Date saved
-
-**Saved Paragraph:**
-- Paragraph text
-- Paragraph number
-- Parent case
-- Citation
-- Personal annotation
-- Relevant to which issue(s)
-
-#### 5.4 Export and Sharing
-
-**Export Options:**
-- Export issue outline with authorities (Word/PDF)
-- Export all citations (formatted list)
-- Export research notes
-- Print research summary
-
-**Sharing:** (Future)
-- Share project with team members
-- Collaborative research spaces
-- Comment and discussion threads
+**Research Workspace is EXCLUDED from MVP** — Deferred to Phase 9 (POST-MVP)
 
 ---
 
@@ -498,7 +461,7 @@ Under each issue:
 
 ### Security
 - No user authentication in MVP (public read-only)
-- Prepare for authentication in Phase 2
+- Prepare for authentication in Phase 9 (Research Workspace)
 - Protect admin functions
 - Secure database connections
 - Rate limiting on API routes
@@ -536,7 +499,9 @@ Under each issue:
 - No mobile app
 
 ### Data Constraints
-- Start with 10-20 verified ICJ cases
+- Start with 5 verified ICJ cases for MVP (expand to 15-20+ in Phase 10)
+- 1-case prototype first (Nicaragua v US, 10 paragraphs)
+- Expand to 5 cases with 100-150 paragraphs total
 - Focus on cases relevant to common moot topics
 - Ensure each case has official source link
 - Manual data entry for MVP
@@ -553,9 +518,11 @@ Under each issue:
 ## Out of Scope for MVP
 
 ### Features NOT in MVP
-- User accounts and authentication
-- Personal saved searches
-- Collaborative workspaces
+- **User accounts and authentication** (Phase 9: Research Workspace)
+- **Personal saved searches** (Phase 9: Research Workspace)
+- **Collaborative workspaces** (Phase 9: Research Workspace)
+- **Save cases/paragraphs functionality** (Phase 9: Research Workspace)
+- **Research project organization** (Phase 9: Research Workspace)
 - Email alerts for new cases
 - Mobile applications
 - Advanced AI search
@@ -580,42 +547,69 @@ These features are valuable but deferred:
 
 ## Initial Dataset Requirements
 
-### MVP Dataset Scope
+### Two-Milestone MVP Strategy
 
-**10-20 Landmark ICJ Cases** covering core moot topics:
+**Milestone 1: 1-Case Prototype** (End of Phase 5)
+- **Case:** Nicaragua v United States (1986) — Military and Paramilitary Activities
+- **Paragraphs:** 10 manually verified key paragraphs
+- **Purpose:** Prove core concept and research workflow
+- **Features:** Complete search, browse, document reader, citation generation
 
-**State Responsibility & Attribution:**
-1. Nicaragua v United States (1986) — Use of force, intervention, attribution
-2. Bosnia and Herzegovina v Serbia and Montenegro (2007) — Genocide Convention, attribution
-3. Democratic Republic of Congo v Uganda (2005) — Armed activities, occupation
+**Milestone 2: 5-Case MVP** (End of Phase 8)
+- **Cases:** 5 verified landmark ICJ cases (listed below)
+- **Paragraphs:** 100-150 manually verified paragraphs (20-30 per case)
+- **Purpose:** Functional research platform with topic diversity
+- **Features:** Full MVP ready for user testing
 
-**Use of Force & Self-Defence:**
-4. Nicaragua v United States (1986) — Article 2(4), Article 51
-5. Oil Platforms (Iran v United States) (2003) — Self-defence
-6. Armed Activities on the Territory of the Congo (2005) — Use of force
+### MVP Dataset: 5 Verified ICJ Cases
 
-**Jurisdiction & Immunities:**
-7. Arrest Warrant (DRC v Belgium) (2002) — Immunities
-8. Jurisdictional Immunities (Germany v Italy) (2012) — State immunity
+The approved initial dataset consists of exactly five ICJ cases:
 
-**Maritime Law:**
-9. North Sea Continental Shelf (1969) — Continental shelf, customary law
-10. Maritime Delimitation in the Black Sea (2009) — EEZ delimitation
+1. **Nicaragua v United States (1986)** — Military and Paramilitary Activities in and against Nicaragua
+   - State responsibility & attribution
+   - Use of force & self-defence
+   - Non-intervention
 
-**Other Key Cases:**
-11. LaGrand (Germany v United States) (2001) — Consular relations, remedies
-12. Avena (Mexico v United States) (2004) — Consular relations
-13. Gabčíkovo-Nagymaros Project (1997) — Treaties, state responsibility
-14. Pulp Mills (Argentina v Uruguay) (2010) — Environmental law
-15. Whaling in the Antarctic (2014) — Treaty interpretation
+2. **Oil Platforms (Iran v United States) (2003)** — Oil Platforms Case
+   - Use of force & self-defence
+   - Necessity and proportionality
+   - Armed attack interpretation
 
-**Advisory Opinions:**
-16. Legality of the Threat or Use of Nuclear Weapons (1996)
-17. Legal Consequences of the Construction of a Wall (2004)
+3. **Armed Activities on the Territory of the Congo (DRC v Uganda) (2005)**
+   - Use of force
+   - State responsibility
+   - Occupation and attribution
+
+4. **Legal Consequences of the Construction of a Wall in the Occupied Palestinian Territory (2004)** — Advisory Opinion
+   - Self-defence
+   - Occupation law
+   - Right to self-determination
+
+5. **Certain Activities Carried Out by Nicaragua in the Border Area (Costa Rica v Nicaragua) (2015)**
+   - Environmental law
+   - Sovereignty and territorial integrity
+   - Due diligence obligations
+
+### Post-MVP Dataset Expansion (Phase 10)
+
+After MVP proves the system works, expand to 15-20+ cases covering additional topics:
+
+**Additional Future Dataset Candidates (Phase 10+):**
+- Bosnia and Herzegovina v Serbia and Montenegro (2007) — Genocide Convention
+- Arrest Warrant (DRC v Belgium) (2002) — Immunities
+- Jurisdictional Immunities (Germany v Italy) (2012) — State immunity
+- North Sea Continental Shelf (1969) — Continental shelf delimitation
+- Maritime Delimitation in the Black Sea (2009) — EEZ delimitation
+- LaGrand (Germany v United States) (2001) — Consular relations
+- Avena (Mexico v United States) (2004) — Consular relations
+- Gabčíkovo-Nagymaros Project (1997) — Treaty law
+- Pulp Mills (Argentina v Uruguay) (2010) — Environmental law
+- Whaling in the Antarctic (2014) — Treaty interpretation
+- Legality of Nuclear Weapons Advisory Opinion (1996)
 
 ### Dataset Requirements
 
-For each case:
+For each case in MVP:
 - ✅ Full official case name
 - ✅ Short case name
 - ✅ Court (ICJ)
@@ -624,7 +618,7 @@ For each case:
 - ✅ Procedural stage
 - ✅ Official citation (ICJ Reports)
 - ✅ Official URL
-- ✅ Key paragraphs (at least 20 per case)
+- ✅ Key paragraphs (20-30 per case)
 - ✅ Legal topic tags (3-8 per case)
 - ⚠️ Full text (link only if copyright restrictions)
 
@@ -708,7 +702,7 @@ Store as structured JSON for seed data:
 
 ### Risk 5: Source Verification Burden
 **Risk:** Manually verifying all authorities is time-consuming  
-**Mitigation:** Start with 10-20 cases only, prioritize quality over quantity
+**Mitigation:** Two-milestone approach — 1 case prototype (10 paragraphs), expand to 5 cases (100-150 paragraphs) for MVP, prioritize quality over quantity
 
 ---
 
@@ -746,10 +740,11 @@ Store as structured JSON for seed data:
 - Citation copy integration
 - Testing against reference examples
 
-### Phase 6: Initial Dataset (Weeks 11-12)
-- Manual case data entry (10-20 cases)
+### Phase 6: Initial Dataset (Week 13)
+- Expand from 1 case to 5 verified ICJ cases
+- Manual case data entry and verification
 - Source verification
-- Paragraph extraction
+- Paragraph extraction (100-150 total)
 - Topic tagging
 - Database seeding
 
@@ -760,46 +755,114 @@ Store as structured JSON for seed data:
 - Comprehensive testing
 - Documentation
 
-**Total MVP Timeline:** 14 weeks
+**Total Estimated MVP Timeline:** 14-16 weeks (indicative, subject to implementation progress)
+
+**Two-Milestone Breakdown:**
+- **Weeks 1-10 (Phases 0-5):** First working prototype (1-case, core features)
+- **Weeks 11-16 (Phases 6-8):** Dataset expansion (5 cases), polish, testing, MVP completion
 
 ---
 
 ## Future Phases (Post-MVP)
 
-### Phase 2: Research Workspace (4 weeks)
-- User authentication
-- Saved cases and paragraphs
-- Research projects
-- Issue organization
+### Phase 9: Research Workspace (4 weeks) — POST-MVP
+
+**Priority:** HIGH for Post-MVP  
+**Status:** Explicitly EXCLUDED from MVP
+
+#### Feature: Research Workspace
+
+Personal research organization for moot court preparation.
+
+**5.1 Project Organization**
+
+Users can create research projects:
+- Project name (e.g., "Jessup 2027 — Applicant Memorial")
+- Project description
+- Creation date
+- Related competition/course
+
+**5.2 Issue-Based Organization**
+
+Within each project:
+- Issue I: [Legal Issue Name]
+- Issue II: [Legal Issue Name]
+- Issue III: [Legal Issue Name]
+
+Under each issue:
+- Saved cases
+- Saved paragraphs
+- Treaties and provisions
+- Research notes
+- Legal arguments
+
+**5.3 Saved Content**
+
+**Saved Case:**
+- Full case metadata
+- Link to document
+- Custom tags
+- Personal notes
+- Date saved
+
+**Saved Paragraph:**
+- Paragraph text
+- Paragraph number
+- Parent case
+- Citation
+- Personal annotation
+- Relevant to which issue(s)
+
+**5.4 Export and Sharing**
+
+**Export Options:**
+- Export issue outline with authorities (Word/PDF)
+- Export all citations (formatted list)
+- Export research notes
+- Print research summary
+
+**Sharing:** (Future)
+- Share project with team members
+- Collaborative research spaces
+- Comment and discussion threads
+
+**Technical Requirements for Phase 9:**
+- User authentication (Supabase Auth)
+- User database tables
+- Saved content management
+- Project organization logic
 - Export functionality
 
-### Phase 3: Extended Dataset (Ongoing)
-- Add 50+ more cases
+---
+
+### Phase 10: Extended Dataset (Ongoing)
+- Expand from 5 to 15-20+ verified ICJ cases
+- Add 50+ more cases beyond initial 20 (reaching 50+ total)
 - Include ICTY/ICTR cases
 - Add ICC cases
 - Include PCA awards
 - Regional court cases
 
-### Phase 4: Treaties & Documents (6 weeks)
+### Phase 11: Treaties & Documents (6 weeks)
 - Treaty database
 - Article-level citation
 - UN resolutions
 - ILC materials
 
-### Phase 5: Advanced Search (4 weeks)
+### Phase 12: Advanced Search (4 weeks)
 - Meilisearch integration
 - Semantic search
 - Synonym expansion
 - Better relevance ranking
 - Search suggestions
 
-### Phase 6: Competition Profiles (3 weeks)
+### Phase 13: Competition Profiles (3 weeks)
 - Custom citation profiles
 - Competition-specific rules
 - Citation validation
 - Memorial export templates
 
-### Phase 7: AI Features (8 weeks)
+### Phase 14: AI Features (8 weeks) — POST-MVP
 - Legal concept extraction
 - Case similarity
 - Authority recommendations
