@@ -377,8 +377,8 @@ This roadmap outlines the phased development approach for MootMood, starting wit
 
 ## Phase 6: Initial Dataset (Weeks 13-14)
 
-**Duration:** 2 weeks  
-**Goal:** Create verified dataset of 10-20 ICJ cases with metadata and paragraphs
+**Duration:** 1 week  
+**Goal:** Expand from 1-case prototype to 5 verified ICJ cases with complete metadata and paragraphs
 
 ### Tasks
 
