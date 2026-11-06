@@ -755,7 +755,11 @@ Store as structured JSON for seed data:
 - Comprehensive testing
 - Documentation
 
-**Total MVP Timeline:** 14 weeks
+**Total Estimated MVP Timeline:** 14-16 weeks (indicative, subject to implementation progress)
+
+**Two-Milestone Breakdown:**
+- **Weeks 1-10 (Phases 0-5):** First working prototype (1-case, core features)
+- **Weeks 11-16 (Phases 6-8):** Dataset expansion (5 cases), polish, testing, MVP completion
 
 ---
 
