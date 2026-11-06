@@ -155,7 +155,7 @@ Once development begins, installation steps will be:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/[username]/mootmood.git
+git clone https://github.com/Mootmood/mootmood.git
 cd mootmood
 
 # 2. Install dependencies
