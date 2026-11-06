@@ -37,7 +37,7 @@ This roadmap outlines the phased development approach for MootMood, starting wit
 
 #### 🔲 Project Initialization
 - [ ] Initialize Git repository
-- [ ] Create Next.js 14 project with TypeScript
+- [ ] Create Next.js project with App Router and TypeScript (use latest stable version)
 - [ ] Configure Tailwind CSS
 - [ ] Set up shadcn/ui components
 - [ ] Configure ESLint and Prettier
@@ -54,7 +54,7 @@ This roadmap outlines the phased development approach for MootMood, starting wit
 - [ ] Test database connection
 
 #### 🔲 Development Environment
-- [ ] Verify Node.js 20+ installed
+- [ ] Verify Node.js LTS installed (use current LTS version)
 - [ ] Install dependencies
 - [ ] Configure VS Code (or preferred IDE)
 - [ ] Set up Git hooks (Husky)
@@ -830,9 +830,11 @@ Phase 6 expands from 1 case to 5 cases for full MVP.
 ## Development Tools & Resources
 
 ### Required Tools
-- Node.js 20+
+- Node.js LTS (verify current LTS version at implementation time)
 - PostgreSQL 15+ (via Supabase)
 - Git
+
+**Note:** Always use the latest stable, supported versions of all tools at implementation time.
 - VS Code (or preferred IDE)
 - Vercel CLI (optional)
 

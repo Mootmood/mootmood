@@ -108,7 +108,7 @@ International law mooters struggle to:
 - **ORM:** Prisma
 - **Search:** PostgreSQL Full-Text Search (MVP), Meilisearch (planned)
 
-**Note:** Version numbers like "Next.js 14+" or "Node.js 20+" referenced throughout documentation were current at planning time (November 2026). Always use latest stable, supported versions at implementation time.
+**Note:** Use latest stable, supported versions of all technologies at implementation time. Verify compatibility between dependencies before beginning development.
 
 ### Deployment
 - **Hosting:** Vercel
