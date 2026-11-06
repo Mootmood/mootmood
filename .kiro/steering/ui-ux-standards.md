@@ -134,8 +134,9 @@ Use Tailwind's spacing scale consistently:
 - Document metadata card
 - Quick navigation (jump to paragraph)
 - Citation generator
-- Save to workspace button
 - Table of contents (if available)
+
+**Note:** Save functionality (save to workspace button, save paragraph) deferred to Phase 9 (Research Workspace - POST-MVP)
 
 **Main Content (75%):**
 - Document title
@@ -146,9 +147,12 @@ Use Tailwind's spacing scale consistently:
   - Copy paragraph
   - Copy citation
   - Copy both
-  - Save paragraph
 
-### Research Workspace (Future Phase)
+**Note:** Save functionality deferred to Phase 9
+
+### Research Workspace (POST-MVP - Phase 9)
+
+**Note:** This feature is explicitly EXCLUDED from MVP and deferred to Phase 9.
 
 **Layout:** Project sidebar + main area
 
@@ -271,4 +275,3 @@ Use professional icon sets:
 - "Search international law authorities"
 - "Filter by court or legal topic"
 - "Copy citation in OSCOLA format"
-- "Save to your research workspace"
