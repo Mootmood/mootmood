@@ -541,42 +541,69 @@ These features are valuable but deferred:
 
 ## Initial Dataset Requirements
 
-### MVP Dataset Scope
+### Two-Milestone MVP Strategy
 
-**10-20 Landmark ICJ Cases** covering core moot topics:
+**Milestone 1: 1-Case Prototype** (End of Phase 5)
+- **Case:** Nicaragua v United States (1986) — Military and Paramilitary Activities
+- **Paragraphs:** 10 manually verified key paragraphs
+- **Purpose:** Prove core concept and research workflow
+- **Features:** Complete search, browse, document reader, citation generation
 
-**State Responsibility & Attribution:**
-1. Nicaragua v United States (1986) — Use of force, intervention, attribution
-2. Bosnia and Herzegovina v Serbia and Montenegro (2007) — Genocide Convention, attribution
-3. Democratic Republic of Congo v Uganda (2005) — Armed activities, occupation
+**Milestone 2: 5-Case MVP** (End of Phase 8)
+- **Cases:** 5 verified landmark ICJ cases (listed below)
+- **Paragraphs:** 100-150 manually verified paragraphs (20-30 per case)
+- **Purpose:** Functional research platform with topic diversity
+- **Features:** Full MVP ready for user testing
 
-**Use of Force & Self-Defence:**
-4. Nicaragua v United States (1986) — Article 2(4), Article 51
-5. Oil Platforms (Iran v United States) (2003) — Self-defence
-6. Armed Activities on the Territory of the Congo (2005) — Use of force
+### MVP Dataset: 5 Verified ICJ Cases
 
-**Jurisdiction & Immunities:**
-7. Arrest Warrant (DRC v Belgium) (2002) — Immunities
-8. Jurisdictional Immunities (Germany v Italy) (2012) — State immunity
+The approved initial dataset consists of exactly five ICJ cases:
 
-**Maritime Law:**
-9. North Sea Continental Shelf (1969) — Continental shelf, customary law
-10. Maritime Delimitation in the Black Sea (2009) — EEZ delimitation
+1. **Nicaragua v United States (1986)** — Military and Paramilitary Activities in and against Nicaragua
+   - State responsibility & attribution
+   - Use of force & self-defence
+   - Non-intervention
 
-**Other Key Cases:**
-11. LaGrand (Germany v United States) (2001) — Consular relations, remedies
-12. Avena (Mexico v United States) (2004) — Consular relations
-13. Gabčíkovo-Nagymaros Project (1997) — Treaties, state responsibility
-14. Pulp Mills (Argentina v Uruguay) (2010) — Environmental law
-15. Whaling in the Antarctic (2014) — Treaty interpretation
+2. **Oil Platforms (Iran v United States) (2003)** — Oil Platforms Case
+   - Use of force & self-defence
+   - Necessity and proportionality
+   - Armed attack interpretation
 
-**Advisory Opinions:**
-16. Legality of the Threat or Use of Nuclear Weapons (1996)
-17. Legal Consequences of the Construction of a Wall (2004)
+3. **Armed Activities on the Territory of the Congo (DRC v Uganda) (2005)**
+   - Use of force
+   - State responsibility
+   - Occupation and attribution
+
+4. **Legal Consequences of the Construction of a Wall in the Occupied Palestinian Territory (2004)** — Advisory Opinion
+   - Self-defence
+   - Occupation law
+   - Right to self-determination
+
+5. **Certain Activities Carried Out by Nicaragua in the Border Area (Costa Rica v Nicaragua) (2015)**
+   - Environmental law
+   - Sovereignty and territorial integrity
+   - Due diligence obligations
+
+### Post-MVP Dataset Expansion (Phase 10)
+
+After MVP proves the system works, expand to 15-20+ cases covering additional topics:
+
+**Additional Future Dataset Candidates (Phase 10+):**
+- Bosnia and Herzegovina v Serbia and Montenegro (2007) — Genocide Convention
+- Arrest Warrant (DRC v Belgium) (2002) — Immunities
+- Jurisdictional Immunities (Germany v Italy) (2012) — State immunity
+- North Sea Continental Shelf (1969) — Continental shelf delimitation
+- Maritime Delimitation in the Black Sea (2009) — EEZ delimitation
+- LaGrand (Germany v United States) (2001) — Consular relations
+- Avena (Mexico v United States) (2004) — Consular relations
+- Gabčíkovo-Nagymaros Project (1997) — Treaty law
+- Pulp Mills (Argentina v Uruguay) (2010) — Environmental law
+- Whaling in the Antarctic (2014) — Treaty interpretation
+- Legality of Nuclear Weapons Advisory Opinion (1996)
 
 ### Dataset Requirements
 
-For each case:
+For each case in MVP:
 - ✅ Full official case name
 - ✅ Short case name
 - ✅ Court (ICJ)
@@ -585,7 +612,7 @@ For each case:
 - ✅ Procedural stage
 - ✅ Official citation (ICJ Reports)
 - ✅ Official URL
-- ✅ Key paragraphs (at least 20 per case)
+- ✅ Key paragraphs (20-30 per case)
 - ✅ Legal topic tags (3-8 per case)
 - ⚠️ Full text (link only if copyright restrictions)
 
