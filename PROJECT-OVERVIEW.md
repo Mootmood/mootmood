@@ -39,10 +39,10 @@ MootMood is a professional legal research platform designed specifically for int
 - Never fabricates missing information
 
 ### 4. International Law Sources Library
-- ICJ judgments (15-20 landmark cases for MVP)
+- ICJ judgments (5 verified cases for MVP)
 - Advisory opinions
 - Orders and arbitral awards
-- Expandable to other tribunals (ICC, ICTY, ITLOS, etc.)
+- Expandable to other tribunals (ICC, ICTY, ITLOS, etc.) in Phase 10+
 
 ### 5. Topic-Based Discovery
 - Browse cases by legal concept rather than case name
@@ -106,7 +106,7 @@ MootMood is a professional legal research platform designed specifically for int
 
 ## Development Roadmap
 
-### MVP Timeline: 17 Weeks
+### MVP Timeline: 14-16 Weeks (Indicative)
 
 **Phase 0: Foundation (Weeks 1-2)** ✅ COMPLETE
 - Requirements, architecture, database design
@@ -142,27 +142,31 @@ MootMood is a professional legal research platform designed specifically for int
 - OSCOLA formatter
 - Bluebook formatter
 - UI integration
+- **Milestone 1 Complete:** 1-case prototype (Nicaragua v US)
 
-**Phase 6: Initial Dataset (Weeks 13-14)**
-- 15-20 verified ICJ cases
-- Paragraph extraction (300+)
+**Phase 6: Initial Dataset (Week 13)**
+- Expand from 1 to 5 verified ICJ cases
+- 100-150 total paragraphs
 - Topic tagging
 - Database seeding
 
-**Phase 7: Testing & Polish (Weeks 15-16)**
+**Phase 7: Testing & Polish (Weeks 14-15)**
 - Comprehensive testing
 - UI/UX polish
 - Performance optimization
 - Documentation
 
-**Phase 8: MVP Launch (Week 17)**
+**Phase 8: MVP Launch (Week 16)**
 - Production deployment
 - Monitoring
 - Initial feedback
+- **Milestone 2 Complete:** 5-case MVP
+
+**Note:** Timeline is indicative based on reduced scope (5 cases instead of 15-20).
 
 ### Post-MVP Phases
-- **Phase 9:** Research Workspace (4 weeks)
-- **Phase 10:** Extended Dataset (ongoing)
+- **Phase 9:** Research Workspace (user accounts, saved authorities, project organization) - 4 weeks
+- **Phase 10:** Extended Dataset (expand to 15-20+ cases across multiple tribunals) - ongoing
 - **Phase 11:** Treaties & Documents (6 weeks)
 - **Phase 12:** Advanced Search (4 weeks)
 - **Phase 13:** Citation Profiles (3 weeks)
@@ -240,38 +244,50 @@ MootMood is a professional legal research platform designed specifically for int
 
 ## Initial Dataset (MVP)
 
-### 15-20 Landmark ICJ Cases
+### Two-Milestone Strategy
+
+**Milestone 1: 1-Case Prototype** (End of Phase 5)
+- **Case:** Nicaragua v United States (1986)
+- **Paragraphs:** 10 manually verified key paragraphs
+- **Purpose:** Prove core concept and research workflow
+- **Deliverables:** Working search, browse, document reader, citation generation
+
+**Milestone 2: 5-Case MVP** (End of Phase 8)
+- **Cases:** 5 verified landmark ICJ cases
+- **Paragraphs:** 100-150 manually verified paragraphs (20-30 per case)
+- **Purpose:** Functional research platform with topic diversity
+- **Deliverables:** Complete MVP ready for user testing
+
+### MVP Dataset: 5 Verified ICJ Cases
 
 **Covering:**
-- State Responsibility & Attribution (3-4 cases)
+- State Responsibility & Attribution (2 cases)
   - Nicaragua v United States
-  - Bosnia v Serbia
-  - DRC v Uganda
+  - Bosnia v Serbia (Genocide Convention)
 
-- Use of Force & Self-Defence (3-4 cases)
-  - Nicaragua
-  - Oil Platforms
-  - Armed Activities (DRC v Uganda)
+- Use of Force & Self-Defence (2 cases)
+  - Nicaragua (also covers attribution)
+  - Oil Platforms (Iran v United States)
 
-- Jurisdiction & Immunities (2-3 cases)
-  - Arrest Warrant
-  - Jurisdictional Immunities
-
-- Maritime Law (2-3 cases)
-  - North Sea Continental Shelf
-  - Black Sea Maritime Delimitation
-
-- Other Key Topics (2-3 cases)
-  - LaGrand (consular relations)
-  - Pulp Mills (environmental law)
-  - Nuclear Weapons (advisory opinion)
+- Jurisdiction & Immunities (1 case)
+  - Arrest Warrant (DRC v Belgium)
 
 **Requirements:**
 - Complete verified metadata
 - Official source links
-- 20+ key paragraphs per case
+- 20-30 key paragraphs per case
 - Legal topic tagging (3-8 topics per case)
-- 300+ total paragraphs across all cases
+- 100-150 total paragraphs across all cases
+- Source verification documentation
+
+### Post-MVP Expansion (Phase 10)
+
+After MVP proves the system works, expand to 15-20+ cases:
+- Additional State Responsibility cases (DRC v Uganda)
+- Maritime Law (North Sea Continental Shelf, Black Sea Delimitation)
+- Human Rights & IHL cases (LaGrand, Pulp Mills)
+- Advisory Opinions (Nuclear Weapons, Wall)
+- Other tribunals (ICC, ICTY, ITLOS, etc.)
 
 ---
 
@@ -430,10 +446,10 @@ mootmood/
    - ✅ architecture.md
    - ✅ database-schema.md
    - ✅ development-roadmap.md
-   - Provide feedback or approval
+   - ✅ Documentation synchronized with approved MVP scope
 
-2. **Initialize Project**
-   - Create GitHub repository
+2. **Initialize Project (Local Machine)**
+   - Clone GitHub repository
    - Initialize Next.js project
    - Set up development environment
    - Create Supabase/database project
@@ -448,17 +464,23 @@ mootmood/
 
 ## Long-Term Vision
 
+**6-Month Goal:**
+- 5-case MVP deployed and tested
+- Research Workspace implemented (Phase 9)
+- Begin dataset expansion (Phase 10)
+- 50+ active users
+- Feedback from initial moot court participants
+
 **12-Month Goal:**
-- 100+ verified legal authorities
-- 2,000+ paragraphs
+- 15-20+ verified legal authorities
+- 500+ paragraphs
 - Multiple international tribunals
-- Treaty database
-- Research workspace with user accounts
+- Treaty database foundation
 - 500+ active users
 - Recognized by moot court community
 
 **24-Month Goal:**
-- 500+ legal authorities
+- 50+ legal authorities
 - AI-powered case discovery
 - Semantic legal search
 - Competition-specific citation profiles
@@ -473,10 +495,9 @@ Build MootMood into the go-to legal research platform for international law moot
 
 ## Contact & Collaboration
 
-**Developer:** [Your name]  
-**Email:** [Your email]  
-**GitHub:** [Repository URL]  
-**Status:** Planning Complete — Ready for Development
+**Repository:** https://github.com/Mootmood/mootmood  
+**Status:** Planning Complete — Ready for Development  
+**Contact:** Developer information to be added  
 
 ---
 
