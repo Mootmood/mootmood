@@ -53,7 +53,7 @@ I have successfully completed the comprehensive planning and architecture phase 
 - Sample data structures
 
 #### 4. **Development Roadmap** (`development-roadmap.md`)
-- Complete 17-week MVP timeline broken into 8 phases
+- Complete MVP timeline (14-16 weeks indicative) broken into 8 phases
 - Detailed task lists for each phase
 - Review checkpoints between phases
 - Post-MVP phases (9-14) with timelines
@@ -185,7 +185,7 @@ I have successfully completed the comprehensive planning and architecture phase 
 
 ### 6. **Phased Development**
 - MVP focuses on core search + citation features
-- User accounts deferred to Phase 2 (workspace)
+- User accounts deferred to Phase 9 (Research Workspace - POST-MVP)
 - Advanced AI features deferred to Phase 14
 - Each phase builds on stable foundation
 
@@ -427,7 +427,7 @@ I have created this comprehensive planning documentation to ensure:
 2. **Technical foundation** — Architecture is sound and scalable
 3. **Legal accuracy** — Source integrity rules are clear
 4. **Professional design** — UI/UX standards are defined
-5. **Realistic timeline** — 17 weeks with clear milestones
+5. **Realistic timeline** — 14-16 weeks (indicative) with clear milestones
 6. **Risk mitigation** — Identified risks and solutions
 
 ### About the Technology Choices
@@ -536,7 +536,7 @@ Before we proceed, please consider:
 
 2. **Is the technology stack (Next.js + PostgreSQL + Prisma) acceptable?**
 
-3. **Is the 17-week MVP timeline reasonable for your goals?**
+3. **Is the 14-16 week indicative MVP timeline reasonable for your goals?**
 
 4. **Do you have any concerns about the legal accuracy requirements?**
 
