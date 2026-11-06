@@ -52,14 +52,16 @@ MootMood is a professional international law legal research platform designed sp
 
 ### User Needs Analysis
 
-**Moot Court Participant Workflow:**
+**Moot Court Participant Workflow (MVP):**
 1. Identify legal issue from competition problem
-2. Search for relevant authorities
-3. Read judgments to find supporting paragraphs
-4. Extract quotations with pinpoint citations
-5. Organize authorities by memorial issue
-6. Generate properly formatted citations
-7. Draft memorial with cited authorities
+2. Search for relevant authorities by topic or keyword
+3. Discover and open relevant judgments
+4. Read judgments to find supporting paragraphs
+5. Copy relevant paragraphs with one click
+6. Generate properly formatted citations (OSCOLA or Bluebook)
+7. Paste into memorial document
+
+**Note:** Persistent research organization (saving authorities by issue) is a Phase 9 feature, not included in MVP.
 
 **Pain Points Addressed:**
 - ❌ Current: Search case databases by name only
@@ -274,7 +276,7 @@ Citation: Military and Paramilitary Activities in and against Nicaragua (Nicarag
 **Citation Style Selector:**
 - OSCOLA (default for UK/international competitions)
 - Bluebook (for US-focused competitions)
-- Custom Competition Style (future)
+- Note: Custom competition citation styles deferred to Phase 13
 
 **Generated Citation Elements:**
 - Full citation
@@ -453,7 +455,7 @@ Competition-specific profiles:
 
 ### Security
 - No user authentication in MVP (public read-only)
-- Prepare for authentication in Phase 2
+- Prepare for authentication in Phase 9 (Research Workspace)
 - Protect admin functions
 - Secure database connections
 - Rate limiting on API routes
@@ -667,7 +669,7 @@ Store as structured JSON for seed data:
 
 ### Risk 5: Source Verification Burden
 **Risk:** Manually verifying all authorities is time-consuming  
-**Mitigation:** Start with 10-20 cases only, prioritize quality over quantity
+**Mitigation:** Two-milestone approach — 1 case prototype (10 paragraphs), expand to 5 cases (100-150 paragraphs) for MVP, prioritize quality over quantity
 
 ---
 
@@ -705,10 +707,11 @@ Store as structured JSON for seed data:
 - Citation copy integration
 - Testing against reference examples
 
-### Phase 6: Initial Dataset (Weeks 11-12)
-- Manual case data entry (10-20 cases)
+### Phase 6: Initial Dataset (Week 13)
+- Expand from 1 case to 5 verified ICJ cases
+- Manual case data entry and verification
 - Source verification
-- Paragraph extraction
+- Paragraph extraction (100-150 total)
 - Topic tagging
 - Database seeding
 
