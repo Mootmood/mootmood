@@ -287,7 +287,10 @@ MootMood is an academic legal research platform. **Accuracy takes priority over 
 2. **Never Fabricate** — No invented cases, judgments, paragraphs, or citations
 3. **Preserve Original Text** — Maintain exact wording of legal documents
 4. **Transparency** — Mark verification status and missing data clearly
-5. **Quality Over Quantity** — Start with 10-20 carefully verified cases
+5. **Quality Over Quantity** — Two-milestone approach:
+   - First milestone: 1 carefully verified case (Nicaragua v US), 10 paragraphs
+   - MVP: 5 verified ICJ cases, 100-150 paragraphs
+   - Post-MVP: Expand to 15-20+ cases in Phase 10
 
 See [.kiro/steering/legal-research-accuracy.md](.kiro/steering/legal-research-accuracy.md) for complete guidelines.
 
