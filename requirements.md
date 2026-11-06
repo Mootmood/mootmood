@@ -71,8 +71,8 @@ MootMood is a professional international law legal research platform designed sp
 - ❌ Current: Manually format citations from templates
 - ✅ MootMood: Auto-generate citations from metadata
 
-- ❌ Current: Scattered notes and bookmarks
-- ✅ MootMood: Organized research workspace
+- ❌ Current: Copying and pasting from PDFs is error-prone
+- ✅ MootMood: One-click copy with perfect formatting
 
 ---
 
@@ -259,7 +259,8 @@ For each paragraph, provide:
 1. **Copy Paragraph** — Copy paragraph text only
 2. **Copy Citation** — Copy formatted citation with paragraph reference
 3. **Copy Paragraph + Citation** — Both together, formatted for Word
-4. **Save Paragraph** — Save to research workspace (future phase)
+
+**Note:** Save functionality deferred to Phase 9 (Research Workspace - POST-MVP)
 
 **Output Format Example:**
 ```
@@ -424,61 +425,15 @@ Competition-specific profiles:
 
 ---
 
-### Feature 5: Research Workspace
+## Core Features — MVP Scope (Summary)
 
-**Priority:** MEDIUM (Phase 3)
+**MVP includes ONLY the following 4 features:**
+1. Advanced Legal Search Engine
+2. Legal Authority Reader  
+3. Citation Generator
+4. Topic-Based Discovery
 
-#### 5.1 Project Organization
-
-Users can create research projects:
-- Project name (e.g., "Jessup 2027 — Applicant Memorial")
-- Project description
-- Creation date
-- Related competition/course
-
-#### 5.2 Issue-Based Organization
-
-Within each project:
-- Issue I: [Legal Issue Name]
-- Issue II: [Legal Issue Name]
-- Issue III: [Legal Issue Name]
-
-Under each issue:
-- Saved cases
-- Saved paragraphs
-- Treaties and provisions
-- Research notes
-- Legal arguments
-
-#### 5.3 Saved Content
-
-**Saved Case:**
-- Full case metadata
-- Link to document
-- Custom tags
-- Personal notes
-- Date saved
-
-**Saved Paragraph:**
-- Paragraph text
-- Paragraph number
-- Parent case
-- Citation
-- Personal annotation
-- Relevant to which issue(s)
-
-#### 5.4 Export and Sharing
-
-**Export Options:**
-- Export issue outline with authorities (Word/PDF)
-- Export all citations (formatted list)
-- Export research notes
-- Print research summary
-
-**Sharing:** (Future)
-- Share project with team members
-- Collaborative research spaces
-- Comment and discussion threads
+**Research Workspace is EXCLUDED from MVP** — Deferred to Phase 9 (POST-MVP)
 
 ---
 
@@ -536,7 +491,9 @@ Under each issue:
 - No mobile app
 
 ### Data Constraints
-- Start with 10-20 verified ICJ cases
+- Start with 5 verified ICJ cases for MVP (expand to 15-20+ in Phase 10)
+- 1-case prototype first (Nicaragua v US, 10 paragraphs)
+- Expand to 5 cases with 100-150 paragraphs total
 - Focus on cases relevant to common moot topics
 - Ensure each case has official source link
 - Manual data entry for MVP
@@ -553,9 +510,11 @@ Under each issue:
 ## Out of Scope for MVP
 
 ### Features NOT in MVP
-- User accounts and authentication
-- Personal saved searches
-- Collaborative workspaces
+- **User accounts and authentication** (Phase 9: Research Workspace)
+- **Personal saved searches** (Phase 9: Research Workspace)
+- **Collaborative workspaces** (Phase 9: Research Workspace)
+- **Save cases/paragraphs functionality** (Phase 9: Research Workspace)
+- **Research project organization** (Phase 9: Research Workspace)
 - Email alerts for new cases
 - Mobile applications
 - Advanced AI search
@@ -766,34 +725,99 @@ Store as structured JSON for seed data:
 
 ## Future Phases (Post-MVP)
 
-### Phase 2: Research Workspace (4 weeks)
-- User authentication
-- Saved cases and paragraphs
-- Research projects
-- Issue organization
+### Phase 9: Research Workspace (4 weeks) — POST-MVP
+
+**Priority:** HIGH for Post-MVP  
+**Status:** Explicitly EXCLUDED from MVP
+
+#### Feature: Research Workspace
+
+Personal research organization for moot court preparation.
+
+**5.1 Project Organization**
+
+Users can create research projects:
+- Project name (e.g., "Jessup 2027 — Applicant Memorial")
+- Project description
+- Creation date
+- Related competition/course
+
+**5.2 Issue-Based Organization**
+
+Within each project:
+- Issue I: [Legal Issue Name]
+- Issue II: [Legal Issue Name]
+- Issue III: [Legal Issue Name]
+
+Under each issue:
+- Saved cases
+- Saved paragraphs
+- Treaties and provisions
+- Research notes
+- Legal arguments
+
+**5.3 Saved Content**
+
+**Saved Case:**
+- Full case metadata
+- Link to document
+- Custom tags
+- Personal notes
+- Date saved
+
+**Saved Paragraph:**
+- Paragraph text
+- Paragraph number
+- Parent case
+- Citation
+- Personal annotation
+- Relevant to which issue(s)
+
+**5.4 Export and Sharing**
+
+**Export Options:**
+- Export issue outline with authorities (Word/PDF)
+- Export all citations (formatted list)
+- Export research notes
+- Print research summary
+
+**Sharing:** (Future)
+- Share project with team members
+- Collaborative research spaces
+- Comment and discussion threads
+
+**Technical Requirements for Phase 9:**
+- User authentication (Supabase Auth)
+- User database tables
+- Saved content management
+- Project organization logic
 - Export functionality
 
-### Phase 3: Extended Dataset (Ongoing)
-- Add 50+ more cases
+---
+
+### Phase 10: Extended Dataset (Ongoing)
+### Phase 10: Extended Dataset (Ongoing)
+- Expand from 5 to 15-20+ verified ICJ cases
+- Add 50+ more cases beyond initial 20
 - Include ICTY/ICTR cases
 - Add ICC cases
 - Include PCA awards
 - Regional court cases
 
-### Phase 4: Treaties & Documents (6 weeks)
+### Phase 11: Treaties & Documents (6 weeks)
 - Treaty database
 - Article-level citation
 - UN resolutions
 - ILC materials
 
-### Phase 5: Advanced Search (4 weeks)
+### Phase 12: Advanced Search (4 weeks)
 - Meilisearch integration
 - Semantic search
 - Synonym expansion
 - Better relevance ranking
 - Search suggestions
 
-### Phase 6: Competition Profiles (3 weeks)
+### Phase 13: Competition Profiles (3 weeks)
 - Custom citation profiles
 - Competition-specific rules
 - Citation validation
