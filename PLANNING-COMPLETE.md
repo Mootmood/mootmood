@@ -465,9 +465,10 @@ I have created this comprehensive planning documentation to ensure:
 - Clear progress milestones
 - Can adjust based on feedback
 
-**Why start with 10-20 cases?**
-- Quality over quantity
-- Verify entire workflow works
+**Two-Milestone Approach:**
+- **Milestone 1:** 1 case (Nicaragua v US), 10 paragraphs — Proves core concept
+- **MVP (Milestone 2):** 5 cases, 100-150 paragraphs — Functional research platform
+- **Phase 10:** Expand to 15-20+ cases with more legal topics
 - Test citation accuracy
 - Ensure UI/UX is right
 - Easier to expand than to fix bad data
