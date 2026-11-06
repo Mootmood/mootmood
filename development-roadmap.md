@@ -383,9 +383,11 @@ This roadmap outlines the phased development approach for MootMood, starting wit
 ### Tasks
 
 #### Case Selection
-- [ ] Select 15-20 landmark ICJ cases
+- [ ] Select 5 verified ICJ cases for MVP
 - [ ] Prioritize cases for moot topics:
-  - State responsibility & attribution (3-4 cases)
+  - State responsibility & attribution (2 cases: Nicaragua, Bosnia v Serbia)
+  - Use of force & self-defence (2 cases: Nicaragua, Oil Platforms)
+  - Jurisdiction & immunities (1 case: Arrest Warrant)
   - Use of force & self-defence (3-4 cases)
   - Jurisdiction & immunities (2-3 cases)
   - Maritime law (2-3 cases)
@@ -438,11 +440,14 @@ For each case (minimum 20 key paragraphs per case):
 - [ ] Check for any errors or inconsistencies
 
 **Deliverables:**
-- 15-20 verified ICJ cases
-- Minimum 300 extracted paragraphs
+- 5 verified ICJ cases (expand from 1-case prototype)
+- Minimum 100-150 extracted paragraphs (20-30 per case)
 - Complete metadata for all cases
 - All cases seeded into database
 - Verification documentation
+
+**Note:** First milestone (1-case prototype with Nicaragua) completed in Phase 5.  
+Phase 6 expands from 1 case to 5 cases for full MVP.
 
 **Review Checkpoint:** Verify data accuracy and citation outputs
 
@@ -799,10 +804,12 @@ For each case (minimum 20 key paragraphs per case):
 - ✅ Zero critical bugs
 
 **Content:**
-- ✅ 15-20 verified ICJ cases
-- ✅ 300+ extracted paragraphs
+- ✅ 5 verified ICJ cases (MVP)
+- ✅ 100-150 extracted paragraphs
 - ✅ Complete legal topic taxonomy
 - ✅ 8+ courts in directory
+- ✅ Two-milestone strategy: 1-case prototype → 5-case MVP
+- 🔜 Phase 10: Expand to 15-20+ cases
 
 ### Phase 2 Success Criteria (Workspace)
 - User authentication working
@@ -850,10 +857,12 @@ For each case (minimum 20 key paragraphs per case):
 | 3 | Search Functionality | 2 weeks | 7-8 |
 | 4 | Case Detail Pages | 2 weeks | 9-10 |
 | 5 | Citation Generation | 2 weeks | 11-12 |
-| 6 | Initial Dataset | 2 weeks | 13-14 |
-| 7 | Testing & Polish | 2 weeks | 15-16 |
-| 8 | MVP Launch | 1 week | 17 |
-| **Total MVP** | | **17 weeks** | |
+| 6 | Initial Dataset (5 cases) | 1 week | 13 |
+| 7 | Testing & Polish | 2 weeks | 14-15 |
+| 8 | MVP Launch | 1 week | 16 |
+| **Total MVP** | | **14-16 weeks** | |
+
+**Note:** Timeline is indicative based on 5-case MVP scope. First milestone (1-case prototype) completed by end of Phase 5.
 
 **Post-MVP phases:** 25+ additional weeks for Phases 9-14
 
