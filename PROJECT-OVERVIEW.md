@@ -72,7 +72,7 @@ MootMood is a professional legal research platform designed specifically for int
 - **ORM:** Prisma
 - **Search:** PostgreSQL Full-Text Search (MVP), Meilisearch (future)
 
-**Note:** Version numbers like "Next.js 14+" or "Node.js 20+" referenced elsewhere were current at planning time (November 2026). Always use latest stable, supported versions at implementation time.
+**Note:** Use latest stable, supported versions of all technologies at implementation time. Verify compatibility between framework, runtime, and dependencies before beginning development.
 
 ### Deployment
 - **Hosting:** Vercel
