@@ -96,8 +96,9 @@ I have successfully completed the comprehensive planning and architecture phase 
 1. **Advanced Legal Search** — Keyword + topic + filters
 2. **Legal Authority Reader** — Document viewer with paragraph navigation
 3. **Citation Generator** — OSCOLA + Bluebook automated citations
-4. **International Law Sources** — 15-20 verified ICJ cases
-5. **Topic-Based Discovery** — Hierarchical legal taxonomy
+4. **Topic-Based Discovery** — Hierarchical legal taxonomy
+
+**Note:** Research Workspace (save functionality, user accounts) deferred to Phase 9 (POST-MVP)
 
 ### Technology Stack
 - **Frontend:** Next.js 14 + TypeScript + Tailwind CSS + shadcn/ui
@@ -106,14 +107,19 @@ I have successfully completed the comprehensive planning and architecture phase 
 - **Search:** PostgreSQL Full-Text Search (MVP)
 
 ### Timeline
-- **MVP Development:** 17 weeks (4 months)
+- **MVP Development:** 14-16 weeks (indicative, based on 5-case scope)
 - **Phase 0 (Planning):** ✅ Complete
-- **Phases 1-7:** Development
-- **Phase 8:** Launch
+- **Phases 1-8:** Development
+- **Two Milestones:** 1-case prototype (Phase 5) → 5-case MVP (Phase 8)
 
 ### Initial Dataset
-- 15-20 landmark ICJ cases
-- 300+ extracted paragraphs
+**Milestone 1: 1-Case Prototype**
+- Nicaragua v United States (1986)
+- 10 manually verified paragraphs
+
+**Milestone 2: 5-Case MVP**
+- 5 verified landmark ICJ cases
+- 100-150 extracted paragraphs (20-30 per case)
 - Complete verified metadata
 - Official source links
 - Legal topic tagging
@@ -282,8 +288,8 @@ I have successfully completed the comprehensive planning and architecture phase 
 ✅ No critical bugs in core workflows  
 
 **Content:**
-✅ 15-20 verified ICJ cases  
-✅ 300+ extracted paragraphs  
+✅ 5 verified ICJ cases (MVP)  
+✅ 100-150 extracted paragraphs  
 ✅ Complete legal topic taxonomy  
 
 ---
@@ -303,7 +309,7 @@ I have successfully completed the comprehensive planning and architecture phase 
 **Questions to Consider:**
 - Are the MVP features correct?
 - Is the technology stack appropriate?
-- Is the 17-week timeline acceptable?
+- Is the 14-16 week timeline acceptable (indicative only)?
 - Are there any missing requirements?
 - Do you approve the design direction?
 
