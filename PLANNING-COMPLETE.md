@@ -101,10 +101,12 @@ I have successfully completed the comprehensive planning and architecture phase 
 **Note:** Research Workspace (save functionality, user accounts) deferred to Phase 9 (POST-MVP)
 
 ### Technology Stack
-- **Frontend:** Next.js 14 + TypeScript + Tailwind CSS + shadcn/ui
+- **Frontend:** Next.js (App Router) + TypeScript + Tailwind CSS + shadcn/ui
 - **Backend:** Next.js Server Actions + PostgreSQL + Prisma
 - **Deployment:** Vercel + Supabase
 - **Search:** PostgreSQL Full-Text Search (MVP)
+
+**Note:** Use latest stable versions of all technologies at implementation time.
 
 ### Timeline
 - **MVP Development:** 14-16 weeks (indicative, based on 5-case scope)
